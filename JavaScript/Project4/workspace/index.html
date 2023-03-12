@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>DatePicker</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="content-form">
+            <div class="content-group">
+                <div class="content-title">Date Picker</div>
+                <input type="text" class="content-input" autocomplete="off" placeholder="Select date" readonly>
+                <!-- input 클릭시 아래 div에 calendar-open 클래스 추가 -->
+                <div class="calendar">
+                    <div class="calendar-nav">
+                        <a><i class="bx bx-caret-left previous-month"></i></a>
+                        <div class="calendar-current">
+                            <div class="current-month">January</div>
+                            <div class="current-year"></div>
+                        </div>
+                        <a><i class="bx bx-caret-right next-month"></i></a>
+                    </div>
+                    <div class="calendar-grid"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- datepicker 추가 - 주석해제!!-->
+
+    <!-- <div class="container">
+        <form class="content-form">
+            <div class="content-group">
+                <div class="content-title">Date Picker</div>
+                <input type="text" class="content-input" autocomplete="off" placeholder="Select date" readonly>
+                <div class="calendar">
+                    <div class="calendar-nav">
+                        <a><i class="bx bx-caret-left previous-month"></i></a>
+                        <div class="calendar-current">
+                            <div class="current-month">January</div>
+                            <div class="current-year"></div>
+                        </div>
+                        <a><i class="bx bx-caret-right next-month"></i></a>
+                    </div>
+                    <div class="calendar-grid"></div>
+                </div>
+            </div>
+        </form>
+    </div> -->
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

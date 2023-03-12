@@ -1,0 +1,193 @@
+/* CSS 작성 */
+h2,h3{
+    height: 28px;
+}
+
+section{
+    width:1020px;
+    height: 1010px;
+}
+
+/* 로고와 이미지 위치선정 */
+.position{
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* 로고이미지 크기, 간격 */
+.logo_img{
+    width: 176px;
+    height: 40px;
+    margin-top:100px;
+    margin-bottom: 48px;
+}
+
+/* 제목과 부제목 */
+.title_container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding :0px;
+    gap:10px;
+
+    top:8px;
+    margin-bottom: 24px;
+
+}
+.title_medium_24{
+    width: 118px;
+    height: 28px;
+
+    line-height: 28px;
+
+    text-align: center;
+    color:var(--color-black);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+.divider{
+    width:2px;
+    height: 20px;
+    color:var(--color-gray-600);
+
+    flex:none;
+    order: 1;
+    flex-grow:0;
+}
+.title_midium_16{
+    
+    width:229px;
+    height: 18px;
+    font-size: 16px;
+    line-height: 18px;
+    
+    display: flex;
+    align-items: center;
+    color:var(--color-gray-600);
+    flex:none;
+    order:2;
+    flex-grow: 0;
+}
+
+/* 상품이미지 테두리 */
+.border{
+    border-style:solid;
+    border-width: 1px;
+    border-color:var(--color-gray-500);
+    
+}   
+/* 상품 이미지와 버튼 */
+.img_container{
+    width: 1020px;
+    height: 958px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.big_img{
+    box-sizing: border-box;
+    padding: 20px 28px;
+    width:502px;
+    height: 310px;
+    float:left;
+
+    position: relative;
+}
+.small_img{
+    box-sizing: border-box;
+    padding: 14px 22px 14px 21px;
+    width: 243px;
+    height: 310px;
+    float:left;
+
+    position: relative;
+}
+
+.button_position{
+    position: absolute;
+    left:20px;
+    bottom:20px;
+}
+
+.button_transition{
+    width: 42px;
+    height: 42px;
+    font-size:14px;
+
+    color: var(--color-gray-100);
+
+    background-color: var(--opacity-20);
+
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+
+.button_transition:hover{
+    border-color:var(--color-blue-600);
+    width:112px;
+    height: 42px;
+
+    color:var(--color-white);
+    background-color: var(--color-blue-600);
+}
+
+.button_transition:hover::before{
+    content: '구매하기';
+}
+
+
+.big_img:hover{
+    border-color: var(--color-blue-600);
+}  
+
+.small_img:hover{
+    border-color:var(--color-blue-600);
+}
+
+a:focus{
+    outline-color:var(--color-blue-600);
+}
+
+button:focus{
+    border-color: var(--color-blue-600);
+}
+
+.big_img:hover .button_transition{
+    border-color: var(--color-blue-600);
+    width: 112px;
+    
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    transition: all 1.5s;
+    transition-timing-function: ease;
+}
+
+.big_img:hover .button_transition::before{
+    content: '구매하기';
+}
+
+.small_img:hover .button_transition {
+    border-color: var(--color-blue-600);
+    width: 112px;
+
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    transition: all 1.5s;
+    transition-timing-function: ease;
+}
+
+.small_img:hover .button_transition::before {
+    content: '구매하기';
+}
+
